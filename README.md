@@ -1,5 +1,6 @@
 <h1 align="center">Data Analysis using Tableau & SQL <a href="https://public.tableau.com/app/profile/valentyna.kucheriava/vizzes" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/mrankitgupta/mrankitgupta/a768d6bf0a001f03327578ae12f8867e4056cbaf/tableau-software.svg" alt="tableau" width="55" height="40"/> </a> </h1>
 
+### Question 1: What is the difference between the number of jobs and the average salary for the 10 most common positions?  
 ```
 -- Top 10 Frequent Job Titles with salary in USD 
 SELECT job_title,
@@ -19,7 +20,7 @@ WHERE job_title IN ('Data Analyst',
 GROUP BY job_title
 ORDER BY Numberjobs DESC;
 ```
-### Question 1: What is the difference between the number of jobs and the average salary for the 10 most common positions?  
+
 | job_title  | number_jobs | avg_salary |
 | ------------------------- | --------- | ---------------|
 | Data Engineer             | 1040      | 142786         |
