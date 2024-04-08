@@ -9,7 +9,18 @@ GROUP BY job_title
 ORDER BY avg_salary DESC
 LIMIT 10;
 ```
-
+| job_title  | avg_salary |
+| -----------------------------------| ----------------|
+|Data Science Tech Lead	         |375000
+|Cloud Data Architect	         |250000
+|Data Lead	                       |212500
+|Data Analytics Lead	                |211255
+|Principal Data Scientist	         |198171
+|Director of Data Science	         |195141
+|Principal Data Engineer	         |192500
+|Machine Learning Software Engineer  |192420
+|Data Science Manager	         |191279
+|Applied Scientist	                |190264
 
 ### Question 5: What is the difference between the number of jobs and the average salary for the 10 most common positions?  
 ```
