@@ -19,3 +19,21 @@ WHERE job_title IN ('Data Analyst',
 GROUP BY job_title
 ORDER BY Numberjobs DESC;
 ```
+### Question 1: What is the difference between the number of jobs and the average salary for the 10 most common positions?  
+| job_title  | number_jobs | avg_salary |
+| ------------------------- | ----------------------- | ---------------- |
+| Data Engineer             | 1040                    | $142,786         |
+| Data Scientist            | 840                     | $140,870         |
+| Data Analyst              | 612                     | $108,716         |
+| Machine Learning Engineer | 289                     | $154,691         |
+| Analytics Engineer        | 103                     | $152,369         |
+| Data Architect            | 101                     | $161,714         |
+| Research Scientist        | 82                      | $161,214         |
+| Data Science Manager      | 58                      | $191,279         |
+| Research Engineer         | 37                      | $163,108         |
+
+
+
+
+
+
