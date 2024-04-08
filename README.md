@@ -1,5 +1,16 @@
 <h1 align="center">Data Analysis using Tableau & SQL <a href="https://public.tableau.com/app/profile/valentyna.kucheriava/vizzes" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/mrankitgupta/mrankitgupta/a768d6bf0a001f03327578ae12f8867e4056cbaf/tableau-software.svg" alt="tableau" width="55" height="40"/> </a> </h1>
 
+### Question 1: How does salary vary based on different job titles?
+```
+-- Average Salary by Job Title
+SELECT job_title, ROUND (AVG (salary_in_usd),0) AS avg_salary
+FROM salaries
+GROUP BY job_title 
+ORDER BY avg_salary DESC
+LIMIT 10;
+```
+
+
 ### Question 1: What is the difference between the number of jobs and the average salary for the 10 most common positions?  
 ```
 -- Top 10 Frequent Job Titles with salary in USD 
