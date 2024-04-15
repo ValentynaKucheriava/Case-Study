@@ -4,6 +4,8 @@ The data used in this project is the [Data Science Salaries 2023](https://www.ka
 
 ## Data Transformation
 Ja observed that the majority of values are in their abbreviated form, which, if displayed as such in reports, could be ambiguous, so ja adjusted these values.
+* remote_ratio: Modified the values as [0 -> Office; 50 -> Hybrid; 100 -> Remote]
+* employment_type: Modified the values as [CT -> Contract; FT -> Full Time; FL -> Freelance; PT -> Part Time]
 ## SQL
 
 ### Question 1: How does salary vary based on different job titles?
