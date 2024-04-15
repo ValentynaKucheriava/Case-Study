@@ -30,7 +30,7 @@ LIMIT 10;
 |Data Science Manager	         |191279
 |Applied Scientist	                |190264
 
-### Question 5: What is the difference between the number of jobs and the average salary for the 10 most common positions?  
+#### Question 5: What is the difference between the number of jobs and the average salary for the 10 most common positions?  
 ```
 -- Top 10 Frequent Job Titles with salary in USD 
 SELECT job_title,
