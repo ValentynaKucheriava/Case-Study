@@ -66,7 +66,7 @@ ORDER BY Numberjobs DESC;
 
 ## Data Visualisation 
 
-[Original visualization:](---) 
+Original visualization: [Tableau Public](https://public.tableau.com/app/profile/valentyna.kucheriava/vizzes) 
 
 
 
