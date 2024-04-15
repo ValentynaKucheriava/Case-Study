@@ -8,6 +8,12 @@ Ja observed that the majority of values are in their abbreviated form, which, if
 * employment_type: Modified the values as [CT -> Contract; FT -> Full Time; FL -> Freelance; PT -> Part Time]
 ## SQL
 ### Average Salary
+* Salary based on different job title
+* Salary based on employment type
+* Salary based on company's primary location
+* Salary based on size of the company
+* Salary based on work location
+* Salary based on work type
 #### Question 1: How does salary vary based on different job titles?
 ```
 -- Average Salary by Job Title
@@ -63,6 +69,9 @@ ORDER BY Numberjobs DESC;
 | Data Science Manager      | 58        | 191279         |
 | Research Engineer         | 37        | 163108         |
 
+
+* Companies with medium size population pay more than large sized companies
+* Employees working full time either from office or remote location earn significantly more than people working in hybrid mode
 
 ## Data Visualisation 
 
