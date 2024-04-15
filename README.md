@@ -3,7 +3,7 @@
 The data used in this project is the [Data Science Salaries 2023](https://www.kaggle.com/datasets/arnabchaki/data-science-salaries-2023/data) dataset from Kaggle. The objective of this work is to produce data visualizations using the Tableau tool and SQL queries in PostgreSQL.
 
 ## Data Transformation
-Ja observed that the majority of values are in their abbreviated form, which, if displayed as such in reports, could be ambiguous, hence, ja adjusted these values.
+Ja observed that the majority of values are in their abbreviated form, which, if displayed as such in reports, could be ambiguous, so ja adjusted these values.
 ## SQL
 
 ### Question 1: How does salary vary based on different job titles?
