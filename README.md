@@ -1,5 +1,7 @@
 <h1 align="center">Data Analysis using Tableau & SQL <a href="https://public.tableau.com/app/profile/valentyna.kucheriava/vizzes" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/mrankitgupta/mrankitgupta/a768d6bf0a001f03327578ae12f8867e4056cbaf/tableau-software.svg" alt="tableau" width="55" height="40"/> </a> </h1>
 
+The data used in this project is the Data Science Salaries 2023 dataset from Kaggle.
+
 ### Question 1: How does salary vary based on different job titles?
 ```
 -- Average Salary by Job Title
