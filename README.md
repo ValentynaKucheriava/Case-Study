@@ -36,9 +36,9 @@ LIMIT 15;
 
 #### Question 2: What is the average salary in relation to the company's primary location?
 ```
-SELECT "company_location " , ROUND (AVG(salary_in_usd),0) AS AverageSalary
+SELECT company_location, ROUND (AVG(salary_in_usd),0) AS AverageSalary
 FROM salaries
-GROUP BY "company_location "
+GROUP BY company_location
 ORDER BY AverageSalary DESC
 LIMIT 10; 
 ```
