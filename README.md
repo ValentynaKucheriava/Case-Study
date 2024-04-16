@@ -7,6 +7,7 @@ Ja observed that the majority of values are in their abbreviated form, which, if
 * remote_ratio: Modified the values as [0 -> Office; 50 -> Hybrid; 100 -> Remote]
 * employment_type: Modified the values as [CT -> Contract; FT -> Full Time; FL -> Freelance; PT -> Part Time]
 * Company Location/Employee Residence: Modified the values as [DK -> Denmark; CZ -> Czech Republic; US -> United States of America; CA -> Canada etc.]
+* A new category called 'Job Group' was created based on the 'job_title'.
 ## SQL
 ### Average Salary
 * What are the top 10 job titles with the highest average salaries?
