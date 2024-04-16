@@ -6,7 +6,7 @@ The data used in this project is the [Data Science Salaries 2023](https://www.ka
 Ja observed that the majority of values are in their abbreviated form, which, if displayed as such in reports, could be ambiguous, so ja adjusted these values.
 * remote_ratio: Modified the values as [0 -> Office; 50 -> Hybrid; 100 -> Remote]
 * employment_type: Modified the values as [CT -> Contract; FT -> Full Time; FL -> Freelance; PT -> Part Time]
-* Company Location/Employee Residence: Modified the values as [DK -> Denmark; CZ -> Czech Republic; US -> United States of America; CA -> Canada]
+* Company Location/Employee Residence: Modified the values as [DK -> Denmark; CZ -> Czech Republic; US -> United States of America; CA -> Canada etc.]
 ## SQL
 ### Average Salary
 * Salary based on different job title
