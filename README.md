@@ -9,22 +9,19 @@ Ja observed that the majority of values are in their abbreviated form, which, if
 * Company Location/Employee Residence: Modified the values as [DK -> Denmark; CZ -> Czech Republic; US -> United States of America; CA -> Canada etc.]
 ## SQL
 ### Average Salary
-* Salary based on different job title
-* Salary based on employment type
-* Salary based on company's primary location
-* Salary based on size of the company
-* Salary based on work location
-* Salary based on work type
-#### Question 1: How does salary vary based on different job titles?
+* What are the top 10 job titles with the highest average salaries?
+* What is the average salary in relation to the company's primary location?
+* How does company size impact employee salaries?
+* How does salary differ across different types of employment?
+#### Question 1: What are the top 10 job titles with the highest average salaries??
 ```
--- Average Salary by Job Title
-SELECT job_title, ROUND (AVG (salary_in_usd),0) AS avg_salary
+SELECT job_title, ROUND (AVG (salary_in_usd),0) AS AverageSalary
 FROM salaries
 GROUP BY job_title 
-ORDER BY avg_salary DESC
+ORDER BY AverageSalary DESC
 LIMIT 10;
 ```
-| job_title  | avg_salary |
+| job_title  | AverageSalary |
 | -----------------------------------| ----------------|
 |Data Science Tech Lead	         |375000
 |Cloud Data Architect	         |250000
@@ -36,6 +33,33 @@ LIMIT 10;
 |Machine Learning Software Engineer  |192420
 |Data Science Manager	         |191279
 |Applied Scientist	                |190264
+
+#### Question 2: What is the average salary in relation to the company's primary location?
+```
+SELECT "company_location " , ROUND (AVG(salary_in_usd),0) AS AverageSalary
+FROM salaries
+GROUP BY "company_location "
+ORDER BY AverageSalary DESC
+LIMIT 10; 
+```
+
+#### Question 3: How does company size impact employee salaries?
+```
+SELECT company_size, ROUND(AVG(salary_in_usd),0) AS AverageSalary
+FROM salaries
+GROUP BY company_size
+ORDER BY AverageSalary DESC; 
+```
+
+#### Question 4: How does salary differ across different types of employment?
+```
+SELECT employment_type, ROUND(AVG(salary_in_usd),0) AS AverageSalary
+FROM salaries
+GROUP BY employment_type
+ORDER BY AverageSalary DESC; 
+```
+
+
 
 #### Question 5: What is the difference between the number of jobs and the average salary for the 10 most common positions?  
 ```
