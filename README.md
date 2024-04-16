@@ -15,7 +15,6 @@ Ja observed that the majority of values are in their abbreviated form, which, if
 * How does salary differ across different types of employment?
 #### Question 1: What are the top 10 job titles with the highest average salaries??
 ```
--- What are the top 10 job titles with the highest average salaries?
 SELECT job_title, ROUND (AVG (salary_in_usd),0) AS AverageSalary
 FROM salaries
 GROUP BY job_title 
