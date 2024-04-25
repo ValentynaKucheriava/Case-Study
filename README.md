@@ -174,6 +174,9 @@ Here are the conclusions drawn from the analysis:
 * Israel has the highest average salary, while the United States of America has the highest number of job offers.
 
 ## Data Visualisation 
+Find the interactive on my [Tableau Public profile](https://public.tableau.com/app/profile/valentyna.kucheriava/viz/DataJobsAnalysis_17132119096920/Dashboard1) with a downloadable workbook.
+
+
 
 Original visualization: [Tableau Public](https://public.tableau.com/app/profile/valentyna.kucheriava/vizzes) 
 
