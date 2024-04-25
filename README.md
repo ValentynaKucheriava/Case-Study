@@ -41,12 +41,26 @@ LIMIT 10;
 
 #### Question 2: What is the average salary in relation to the company's primary location?
 ```
-SELECT company_location, ROUND (AVG(salary_in_usd),0) AS AverageSalary
+SELECT company_location , 
+	ROUND (AVG(salary_in_usd),0) AS AverageSalary,
+	COUNT (company_location) AS NumberJobs
 FROM salaries
 GROUP BY company_location
 ORDER BY AverageSalary DESC
 LIMIT 10; 
 ```
+| company_location | AverageSalary | NumberJobs| 
+| -----------------------------------| ----------------|-----|
+| Israel                  | 271447     | 2    
+| Puerto Rico             | 167500     | 4    
+| United States of America| 151822     | 3040 
+| Russian Federation      | 140333     | 3    
+| Canada                  | 131918     | 87   
+| New Zealand             | 125000     | 1    
+| Bosnia and Herzegovina  | 120000     | 1    
+| Ireland                 | 114943     | 7    
+| Japan                   | 114127     | 6    
+| Sweden                  | 105000     | 2    
 
 #### Question 3: How does company size impact employee salaries?
 ```
