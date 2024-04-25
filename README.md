@@ -125,6 +125,7 @@ ORDER BY Numberjobs DESC;
 | Data Architect            | 101       | 161714         |
 | Research Scientist        | 82        | 161214         |
 | Data Science Manager      | 58        | 191279         |
+| Applied Scientist         | 58        | 190264         |
 | Research Engineer         | 37        | 163108         |
 
 
