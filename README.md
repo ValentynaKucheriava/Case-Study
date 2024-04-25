@@ -166,8 +166,12 @@ ORDER BY Numberjobs DESC;
 | Research Engineer         | 37        | 163108         |
 
 
-* Companies with medium size population pay more than large sized companies
-* Employees working full time either from office or remote location earn significantly more than people working in hybrid mode
+Here are the conclusions drawn from the analysis:
+* Senior officials receive higher salaries.
+* Full-time workers earn more than other types of employment.
+* Mid-sized companies pay more than large companies.
+* From 2020 to 2023, both the number of vacancies and the average salary will increase.
+* Israel has the highest average salary, while the United States of America has the highest number of job offers.
 
 ## Data Visualisation 
 
