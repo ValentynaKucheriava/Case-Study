@@ -81,7 +81,7 @@ GROUP BY job_title
 ORDER BY Numberjobs DESC
 LIMIT 10;
 ```
-| job_title  | NumberJobs |
+|job_title| NumberJobs |
 | -----------------------------------| ----------------|
 |Data Engineer	|1040
 |Data Scientist	|840
