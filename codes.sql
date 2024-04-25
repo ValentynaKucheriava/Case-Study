@@ -1,38 +1,55 @@
--- Average Salary by Job Title
-
-SELECT job_title, ROUND (AVG (salary_in_usd),0) AS avg_salary
+-- What are the top 10 job titles with the highest average salaries?
+SELECT job_title, 
+	ROUND (AVG (salary_in_usd),0) AS AverageSalary
 FROM salaries
 GROUP BY job_title 
-ORDER BY avg_salary DESC
+ORDER BY AverageSalary DESC
 LIMIT 10;
 
--- Average Salary by Organisation's Country 
-
-SELECT "company_location " , ROUND (AVG(salary_in_usd),0) AS DD
+-- What is the average salary and number of jobs in relation to the company's primary location?
+SELECT company_location , 
+	ROUND (AVG(salary_in_usd),0) AS AverageSalary,
+	COUNT (company_location) AS NumberJobs
 FROM salaries
-GROUP BY "company_location "
-ORDER BY DD DESC
+GROUP BY company_location
+ORDER BY AverageSalary DESC
 LIMIT 10; 
 
--- Average Salary by Company Size
-
-SELECT company_size, ROUND(AVG(salary_in_usd),0) AS Size
+-- How does company size impact employee salaries?
+SELECT company_size, 
+	ROUND(AVG(salary_in_usd),0) AS AverageSalary
 FROM salaries
 GROUP BY company_size
-ORDER BY Size DESC; 
+ORDER BY AverageSalary DESC; 
 
---  Average Salary by employment Type
-
-SELECT employment_type, ROUND(AVG(salary_in_usd),0) AS bb
+-- How does salary differ across different types of employment?
+SELECT employment_type, 
+	ROUND(AVG(salary_in_usd),0) AS AverageSalary
 FROM salaries
 GROUP BY employment_type
-ORDER BY bb DESC; 
+ORDER BY AverageSalary DESC; 
 
---Top 10 Frequent Job Titles with salary in USD 
 
+-- Provide the top 10 most frequently occurring job offers.
+SELECT job_title, 
+	COUNT (*) AS NumberJobs
+FROM salaries
+GROUP BY job_title
+ORDER BY Numberjobs DESC
+LIMIT 10;
+
+-- Have there been any significant fluctuations in salary or job popularity across the years?
+SELECT work_year, 
+		COUNT(*) as number_jobs,
+		ROUND (AVG(salary_in_usd),0) AS AverageSalary
+FROM salaries
+GROUP BY work_year
+ORDER BY AverageSalary ASC;
+
+-- What is the difference between the number of jobs and the average salary for the 10 most common positions?
 SELECT job_title,
        COUNT(*) as number_jobs,
-       ROUND (AVG(salary_in_usd),0) as avg_salary
+       ROUND (AVG(salary_in_usd),0) as AverageSalary
 FROM salaries
 WHERE job_title IN ('Data Analyst', 
                     'Data Scientist', 
@@ -42,7 +59,7 @@ WHERE job_title IN ('Data Analyst',
                     'Research Scientist', 
                     'Data Architect', 
                     'Research Engineer', 
-                    'Appplied Scientist', 
+                    'Applied Scientist', 
                     'Data Science Manager')
 GROUP BY job_title
 ORDER BY number_jobs DESC;
