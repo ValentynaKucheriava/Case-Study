@@ -66,10 +66,35 @@ FROM salaries
 GROUP BY employment_type
 ORDER BY AverageSalary DESC; 
 ```
+| employment_type  | AverageSalary |
+| -----------------------------------| ----------------|
+|Full-Time	|138314
+|Contact	|113447
+|Freelance	|51808
+|Part-Time	|39534
 
+#### Question 5: Provide the top 10 most frequently occurring job offers.
+```
+SELECT job_title, COUNT (*) AS NumberJobs
+FROM salaries
+GROUP BY job_title
+ORDER BY Numberjobs DESC
+LIMIT 10;
+```
+| job_title  | NumberJobs |
+| -----------------------------------| ----------------|
+|Data Engineer	|1040
+|Data Scientist	|840
+|Data Analyst	|612
+|Machine Learning Engineer	|289
+|Analytics Engineer	|103
+|Data Architect	|101
+|Research Scientist	|82
+|Data Science Manager	|58
+|Applied Scientist	|58
+|Research Engineer	|37
 
-
-#### Question 5: What is the difference between the number of jobs and the average salary for the 10 most common positions?  
+#### Question 6: What is the difference between the number of jobs and the average salary for the 10 most common positions?  
 ```
 -- Top 10 Frequent Job Titles with salary in USD 
 SELECT job_title,
