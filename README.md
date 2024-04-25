@@ -52,6 +52,12 @@ FROM salaries
 GROUP BY company_size
 ORDER BY AverageSalary DESC; 
 ```
+| company_size  | AverageSalary |
+| -----------------------------------| ----------------|
+|Medium       |143131
+|Large	       |118301
+|Small	       |78227
+
 
 #### Question 4: How does salary differ across different types of employment?
 ```
