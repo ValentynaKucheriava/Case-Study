@@ -10,12 +10,14 @@ I observed that the majority of values are in their abbreviated form, which, if 
 * Company Location/Employee Residence: Modified the values as [DK -> Denmark; CZ -> Czech Republic; US -> United States of America; CA -> Canada etc.]
 * A new category called 'Job Group' was created based on the 'job_title'.
 ## SQL
-### Average Salary
+### Average Salary/Number of jobs
 * What are the top 10 job titles with the highest average salaries?
 * What is the average salary in relation to the company's primary location?
 * How does company size impact employee salaries?
 * How does salary differ across different types of employment?
-* Have there been any significant fluctuations in salary or job popularity across the years??
+* Provide the top 10 most frequently occurring job offers.
+* Have there been any significant fluctuations in salary or job popularity across the years?
+* What is the difference between the number of jobs and the average salary for the 10 most common positions?
 #### Question 1: What are the top 10 job titles with the highest average salaries?
 ```
 SELECT job_title, ROUND (AVG (salary_in_usd),0) AS AverageSalary
@@ -83,7 +85,7 @@ ORDER BY Numberjobs DESC
 LIMIT 10;
 ```
 |job_title| NumberJobs |
-| -----------------------------------| ----------------|
+| --------------------| ----------------|
 |Data Engineer	|1040
 |Data Scientist	|840
 |Data Analyst	|612
