@@ -21,7 +21,7 @@ SELECT job_title, ROUND (AVG (salary_in_usd),0) AS AverageSalary
 FROM salaries
 GROUP BY job_title 
 ORDER BY AverageSalary DESC
-LIMIT 15;
+LIMIT 10;
 ```
 | job_title  | AverageSalary |
 | -----------------------------------| ----------------|
