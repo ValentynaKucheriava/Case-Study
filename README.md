@@ -15,7 +15,7 @@ I observed that the majority of values are in their abbreviated form, which, if 
 * What is the average salary in relation to the company's primary location?
 * How does company size impact employee salaries?
 * How does salary differ across different types of employment?
-* How salaries and the popularity of these roles have changed over the past few year?
+* Have there been any significant fluctuations in salary or job popularity across the years??
 #### Question 1: What are the top 10 job titles with the highest average salaries?
 ```
 SELECT job_title, ROUND (AVG (salary_in_usd),0) AS AverageSalary
@@ -96,7 +96,7 @@ LIMIT 10;
 |Research Engineer	|37
 
 
-#### Question 6: How salaries and the popularity of these roles have changed over the past few year?
+#### Question 6: Have there been any significant fluctuations in salary or job popularity across the years?
 ```
 SELECT work_year, 
        COUNT(*) as number_jobs,
