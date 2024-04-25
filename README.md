@@ -12,7 +12,7 @@ I observed that the majority of values are in their abbreviated form, which, if 
 ## SQL
 ### Average Salary/Number of jobs
 * What are the top 10 job titles with the highest average salaries?
-* What is the average salary in relation to the company's primary location?
+* What is the average salary and number of jobs in relation to the company's primary location?
 * How does company size impact employee salaries?
 * How does salary differ across different types of employment?
 * Provide the top 10 most frequently occurring job offers.
@@ -20,7 +20,8 @@ I observed that the majority of values are in their abbreviated form, which, if 
 * What is the difference between the number of jobs and the average salary for the 10 most common positions?
 #### Question 1: What are the top 10 job titles with the highest average salaries?
 ```
-SELECT job_title, ROUND (AVG (salary_in_usd),0) AS AverageSalary
+SELECT job_title,
+	ROUND (AVG (salary_in_usd),0) AS AverageSalary
 FROM salaries
 GROUP BY job_title 
 ORDER BY AverageSalary DESC
@@ -39,7 +40,7 @@ LIMIT 10;
 |Data Science Manager	         |191279
 |Applied Scientist	                |190264
 
-#### Question 2: What is the average salary in relation to the company's primary location?
+#### Question 2: What is the average salary and number of jobs in relation to the company's primary location?
 ```
 SELECT company_location , 
 	ROUND (AVG(salary_in_usd),0) AS AverageSalary,
@@ -64,7 +65,8 @@ LIMIT 10;
 
 #### Question 3: How does company size impact employee salaries?
 ```
-SELECT company_size, ROUND(AVG(salary_in_usd),0) AS AverageSalary
+SELECT company_size,
+	ROUND(AVG(salary_in_usd),0) AS AverageSalary
 FROM salaries
 GROUP BY company_size
 ORDER BY AverageSalary DESC; 
@@ -78,7 +80,8 @@ ORDER BY AverageSalary DESC;
 
 #### Question 4: How does salary differ across different types of employment?
 ```
-SELECT employment_type, ROUND(AVG(salary_in_usd),0) AS AverageSalary
+SELECT employment_type,
+	ROUND(AVG(salary_in_usd),0) AS AverageSalary
 FROM salaries
 GROUP BY employment_type
 ORDER BY AverageSalary DESC; 
@@ -92,7 +95,8 @@ ORDER BY AverageSalary DESC;
 
 #### Question 5: Provide the top 10 most frequently occurring job offers.
 ```
-SELECT job_title, COUNT (*) AS NumberJobs
+SELECT job_title,
+	COUNT (*) AS NumberJobs
 FROM salaries
 GROUP BY job_title
 ORDER BY Numberjobs DESC
