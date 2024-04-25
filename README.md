@@ -104,9 +104,13 @@ SELECT work_year,
 FROM salaries
 GROUP BY work_year
 ORDER BY AverageSalary ASC;
-
 ```
-
+|work_year| NumberJobs | AverageSalary
+| -----------------------------------| ----------------| ----------------|
+|2020	|76	|92303
+|2021	|230	|94087
+|2022	|1664	|133339
+|2023	|1785	|149046
 
 #### Question 7: What is the difference between the number of jobs and the average salary for the 10 most common positions?  
 ```
